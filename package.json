@@ -1,0 +1,22 @@
+{
+  "name": "killian-bot",
+  "version": "1.0.0",
+  "description": "Telegram Bot which downloads everything you send him",
+  "main": "index.js",
+  "author": "Nycam",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^14.0.27"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0",
+    "telegraf-inline-menu": "^5.0.0",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build": "yarn tsc -p .",
+    "start": "yarn tsc -p . && node ./build/main.js"
+  }
+}
