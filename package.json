@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@types/node": "^14.0.27"
+    "@types/node": "^14.0.27",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -17,6 +19,6 @@
   },
   "scripts": {
     "build": "yarn tsc -p .",
-    "start": "yarn tsc -p . && node ./build/main.js"
+    "start": "yarn nodemon -w src --exec 'yarn tsc -p . && node build/main.js'"
   }
 }
