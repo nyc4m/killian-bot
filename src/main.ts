@@ -7,7 +7,7 @@ import {exec} from 'child_process'
 dotenv.config()
 
 const FILTERS = /\.(mp4|mkv)$/
-const ROOT_DIR = '/home/baptiste/Downloads/Telegram\ Desktop'
+const ROOT_DIR = process.env.FILES
 
 
 async function main() {
